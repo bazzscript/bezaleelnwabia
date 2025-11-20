@@ -1,0 +1,155 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 64px;
+    /* Header height */
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.greeting {
+    font-size: 1.25rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.headline {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, var(--foreground) 0%, var(--gray-500) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: var(--gray-500);
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.primaryButton {
+    background: var(--foreground);
+    color: var(--background);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: box-shadow 0.2s ease;
+    display: block;
+}
+
+.primaryButton:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.secondaryButton {
+    color: var(--foreground);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.secondaryButton:hover {
+    text-decoration: underline;
+}
+
+.backgroundGradient {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, var(--accent-glow) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 80px;
+        min-height: 90vh;
+    }
+
+    .content {
+        padding: 0 1rem;
+    }
+
+    .greeting {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .headline {
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .ctaGroup {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .primaryButton {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+
+    .secondaryButton {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 0.875rem 1.5rem;
+        background: var(--gray-100);
+        border-radius: 30px;
+        font-weight: 600;
+        transition: background 0.2s ease;
+    }
+
+    .secondaryButton:hover {
+        background: var(--gray-200);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .secondaryButton {
+            background: var(--gray-200);
+        }
+
+        .secondaryButton:hover {
+            background: var(--gray-300);
+        }
+    }
+}

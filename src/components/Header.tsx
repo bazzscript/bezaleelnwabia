@@ -1,0 +1,49 @@
+"use client";
+
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { Download } from "lucide-react";
+import { useState } from "react";
+import styles from "./Header.module.css";
+import ResumeModal from "./ResumeModal";
+
+export default function Header() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  return (
+    <>
+      <div className={styles.headerContainer}>
+        <motion.header
+          className={styles.header}
+          initial={{ y: -100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <Link href="/" className={styles.logo}>
+            BN
+          </Link>
+          <nav className={styles.nav}>
+            <Link href="#about" className={styles.link}>About</Link>
+            <Link href="#experience" className={styles.link}>Exp</Link>
+            <Link href="#projects" className={styles.link}>Work</Link>
+            <Link href="#contact" className={styles.link}>Contact</Link>
+          </nav>
+          <motion.button 
+            onClick={() => setIsModalOpen(true)}
+            className={styles.resumeButton}
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+          >
+            Resume <Download size={14} />
+          </motion.button>
+        </motion.header>
+      </div>
+
+      <ResumeModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
+    </>
+  );
+}
