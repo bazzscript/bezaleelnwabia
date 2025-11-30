@@ -2,7 +2,8 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Send, MessageCircle, Bot, User, Loader2 } from "lucide-react";
+import { X, Send, MessageCircle, Bot, User, Loader2, ExternalLink } from "lucide-react";
+import ReactMarkdown from "react-markdown";
 import styles from "./ResumeChat.module.css";
 
 interface Message {
@@ -193,7 +194,33 @@ export default function ResumeChat({ isOpen, onClose }: ResumeChatProps) {
                         )}
                       </div>
                       <div className={styles.messageContent}>
-                        <p>{message.content}</p>
+                        {message.role === "assistant" ? (
+                          <ReactMarkdown
+                            components={{
+                              a: ({ node, ...props }) => (
+                                <a 
+                                  {...props} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer" 
+                                  className={styles.markdownLink}
+                                >
+                                  {props.children} <ExternalLink size={12} />
+                                </a>
+                              ),
+                              p: ({ node, ...props }) => <p className={styles.markdownParagraph} {...props} />,
+                              ul: ({ node, ...props }) => <ul className={styles.markdownList} {...props} />,
+                              ol: ({ node, ...props }) => <ol className={styles.markdownList} {...props} />,
+                              li: ({ node, ...props }) => <li className={styles.markdownListItem} {...props} />,
+                              strong: ({ node, ...props }) => <strong className={styles.markdownStrong} {...props} />,
+                              h3: ({ node, ...props }) => <h3 className={styles.markdownHeading} {...props} />,
+                              h4: ({ node, ...props }) => <h4 className={styles.markdownHeading} {...props} />,
+                            }}
+                          >
+                            {message.content}
+                          </ReactMarkdown>
+                        ) : (
+                          <p>{message.content}</p>
+                        )}
                       </div>
                     </motion.div>
                   ))}

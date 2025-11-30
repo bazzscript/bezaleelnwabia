@@ -180,6 +180,63 @@
     margin: 0;
 }
 
+/* Markdown Styles */
+.markdownParagraph {
+    margin: 0 0 0.75rem 0;
+    line-height: 1.6;
+}
+
+.markdownParagraph:last-child {
+    margin-bottom: 0;
+}
+
+.markdownLink {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.markdownLink:hover {
+    border-bottom-color: var(--accent);
+    opacity: 0.9;
+}
+
+.assistantMessage .markdownLink {
+    color: var(--accent);
+}
+
+.markdownList {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.markdownListItem {
+    margin: 0.4rem 0;
+    line-height: 1.6;
+}
+
+.markdownStrong {
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.markdownHeading {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem 0;
+    color: var(--foreground);
+}
+
+.markdownHeading:first-child {
+    margin-top: 0;
+}
+
 .loader {
     animation: spin 1s linear infinite;
 }
