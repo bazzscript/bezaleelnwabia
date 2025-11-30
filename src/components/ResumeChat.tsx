@@ -121,10 +121,10 @@ export default function ResumeChat({ isOpen, onClose }: ResumeChatProps) {
   };
 
   const suggestedQuestions = [
-    "What are your key skills?",
-    "Tell me about your experience",
-    "What projects have you worked on?",
-    "What's your educational background?",
+    "What are Bezaleel's key skills?",
+    "Tell me about Bezaleel's experience",
+    "What projects has Bezaleel worked on?",
+    "What makes Bezaleel a great engineer?",
   ];
 
   return (

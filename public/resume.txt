@@ -4,7 +4,7 @@ SENIOR SOFTWARE ENGINEER
 
 ABOUT
 
-Senior Full-Stack Software Engineer with 5+ years of experience building and deploying production-grade mobile apps, web applications, and backend APIs. I’ve architected scalable cloud systems, developed distributed platforms, and led teams delivering products from concept to launch. Currently expanding into applied machine learning to build intelligent, data-driven solutions.
+Senior AI & Full-Stack Software Engineer with 5+ years of experience building and deploying production-grade mobile apps, web applications, and backend APIs. I’ve architected scalable cloud systems, developed distributed platforms, and led teams delivering products from concept to launch. Currently expanding into applied machine learning to build intelligent, data-driven solutions.
 
 
 PROFESSIONAL EXPERIENCE
@@ -15,7 +15,7 @@ Co-Founder and C.T.O	Sept 2025-Present
 Building intelligent technology to redefine the food ecosystem. 
 Currently Leading development of MealCondo(https://mealcondo.com)—an AI kitchen assistant designed for the modern home that transforms how people interact with food and cooking.
 
-Relevant Technologies Used: Next.js, React Native, Expo, NestJS, FastAPI, Python, Langchain, LLMs, OpenAI, AWS S3)
+Relevant Technologies Used: Next.js, React Native, Expo, NestJS, FastAPI, Python, Langchain, LLMs, OpenAI, AWS S3
 
 
 MESiERE		Greater London, United Kingdom
