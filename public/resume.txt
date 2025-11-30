@@ -1,0 +1,71 @@
+BEZALEEL NWABIA
+SENIOR SOFTWARE ENGINEER
+• bezaleelnwabia@gmail.com • (234) 9061147343 • linkedin.com/in/bezaleel-nwabia
+
+ABOUT
+
+Senior Full-Stack Software Engineer with 5+ years of experience building and deploying production-grade mobile apps, web applications, and backend APIs. I’ve architected scalable cloud systems, developed distributed platforms, and led teams delivering products from concept to launch. Currently expanding into applied machine learning to build intelligent, data-driven solutions.
+
+
+PROFESSIONAL EXPERIENCE
+
+intelligent food solutions.	Abuja, Nigeria
+Co-Founder and C.T.O	Sept 2025-Present
+
+Building intelligent technology to redefine the food ecosystem. 
+Currently Leading development of MealCondo(https://mealcondo.com)—an AI kitchen assistant designed for the modern home that transforms how people interact with food and cooking.
+
+Relevant Technologies Used: Next.js, React Native, Expo, NestJS, FastAPI, Python, Langchain, LLMs, OpenAI, AWS S3)
+
+
+MESiERE		Greater London, United Kingdom
+Senior Backend Engineer	July 2025-Present
+
+As a Senior Backend Engineer, I own and deliver end-to-end features across the stack, contributing to scalable serverless backend systems that power high-traffic applications. I implement AI-driven features through OpenAI API integrations and manage core backend infrastructure, collaborating closely with product, frontend, mobile, and QA teams to ship robust, production-grade solutions.
+I am part of the backend engineering team behind DevotionHub, contributing to the platform’s core services and infrastructure for next-generation creator tools.
+
+Relevant Technologies Used: Hono.js, TypeScript, PostgreSQL, MongoDB, AWS Lambda, and S3, OpenAI
+
+
+QUICKLEAP(https://quickleap.co)	Lagos, Nigeria
+C.T.O		July 2024-Present
+
+As CTO and founding backend engineer at Quickleap, I lead technology strategy and engineering efforts while building the company’s backend infrastructure and APIs from the ground up. I manage cloud architecture, deployment pipelines, and operations to ensure reliable, high-availability systems. I drive the technical vision, aligning engineering initiatives with business objectives, and currently building blockchain-based token infrastructure.
+
+Our products include Quickleap Collaborator, empowering food businesses to grow; Quickleap Grow-for-Life, connecting families directly to farmers and wholesalers; and Quickleap Logistics, creating one of the world’s largest delivery networks. We continue to expand with new products in development.
+
+Relevant Technologies Used: Nests, TypeScript, PostgreSQL, MongoDB, Azure, and Firebase, small language models, solidity, hardhat
+
+
+
+
+
+
+FORCYTHE	Lagos, Nigeria
+Backend Engineer	Jan 2024 -Sept 2024
+
+Designed, developed, and maintained APIs powering Perime.co—a platform enabling users to explore and engage with the unique rhythm of any city. Built scalable backend systems supporting location-based features and real-time user interactions.
+
+Relevant Technologies Used: Nests, TypeScript, PostgreSQL, MongoDB and Firebase
+
+DADOFOOD	Enugu, Nigeria
+Backend Engineer	August 2022-July 2025
+
+As a Backend Engineer at DadoFoods, I led the development of core backend services powering the company’s logistics and commerce ecosystem. I built scalable, reliable systems that improved platform performance, financial transparency, and operational efficiency. My work included designing wallet infrastructure for secure vendor and rider transactions, developing APIs for customers, vendors, and riders, and implementing smart order-routing logic to optimize delivery operations.
+
+I collaborated across teams to ensure engineering efforts aligned with business goals, delivering end-to-end solutions that enhanced reliability, user experience, and stakeholder satisfaction.
+
+Relevant Technologies Used: Nests, ExpressJs TypeScript, PostgreSQL, MongoDB, Aws EC2, Ses, s3, and Firebase
+
+
+
+EDUCATION
+
+ENUGU STATE UNIVERSTY OF SCIENCE AND TECHNOLOGY	Enugu, Nigeria
+Bachelor of Engineering - BE, Computer Engineering	2011-2012
+
+Activities and societies: Nigerian Universities Engineering Students’ Association (NUESA), General departmental activities and student community engagements
+
+Studied Computer Engineering with a solid foundation in software engineering, digital systems, and computer hardware. Acquired knowledge in programming, computer networks, and embedded systems. Graduated in 2020 with practical and theoretical exposure to engineering problem-solving and technology development.
+
+

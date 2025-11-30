@@ -1,8 +1,53 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## 🚀 AI Features
+
+This portfolio includes impressive AI-powered features:
+
+- **🤖 Resume Chat**: Interactive AI chat that allows visitors to ask questions about your resume
+- More AI features coming soon!
+
 ## Getting Started
 
-First, run the development server:
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Set Up Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```bash
+# Google Gemini API Key (Free tier available)
+# Get your free API key from: https://makersuite.google.com/app/apikey
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+**Getting a Free Gemini API Key:**
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Copy the key and add it to your `.env.local` file
+
+**Note:** The free tier includes 15 requests per minute, which is perfect for a portfolio site.
+
+### 3. Set Up Resume Text for AI Chat
+
+The AI chat feature reads from a simple text file for reliability and performance.
+
+**Create `public/resume.txt` with your resume content:**
+1. Open your resume PDF
+2. Copy all the text (Ctrl+A / Cmd+A, then Ctrl+C / Cmd+C)
+3. Create `public/resume.txt` and paste the text
+4. Save the file
+
+**Note:** The `resume.pdf` file is still used for downloads (via the Resume button), but the AI chat uses `resume.txt` for faster, more reliable text access.
+
+That's it! The system will automatically use it when someone uses the chat feature. 🎉
+
+### 4. Run the Development Server
 
 ```bash
 npm run dev
@@ -15,6 +60,10 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+**Test the AI Chat:**
+- Click the "AI Chat" button in the header or "Chat with AI" in the hero section
+- Ask questions like "What are your skills?" or "Tell me about your experience"
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 

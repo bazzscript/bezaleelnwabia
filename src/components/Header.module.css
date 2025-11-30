@@ -67,6 +67,68 @@
     }
 }
 
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: 1rem;
+}
+
+.chatButton {
+    background: var(--accent);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    position: relative;
+}
+
+.chatButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chatButton::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.2);
+    }
+}
+
+.buttonText {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .buttonText {
+        display: none;
+    }
+}
+
 .resumeButton {
     background: var(--foreground);
     color: var(--background);
@@ -75,7 +137,6 @@
     font-size: 0.9rem;
     font-weight: 600;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin-left: 1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -117,10 +178,19 @@
         font-size: 0.75rem;
     }
 
+    .buttonGroup {
+        margin-left: 0.25rem;
+        gap: 0.5rem;
+    }
+
+    .chatButton {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.75rem;
+    }
+
     .resumeButton {
         padding: 0.4rem 0.75rem;
         font-size: 0.75rem;
-        margin-left: 0.25rem;
         white-space: nowrap;
         flex-shrink: 0;
     }

@@ -2,10 +2,13 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MessageCircle, Sparkles } from "lucide-react";
+import { useState } from "react";
 import styles from "./Hero.module.css";
+import ResumeChat from "./ResumeChat";
 
 export default function Hero() {
+  const [isChatOpen, setIsChatOpen] = useState(false);
   return (
     <section className={styles.hero}>
       <div className={styles.backgroundGradient} />
@@ -54,6 +57,16 @@ export default function Hero() {
               View My Work
             </Link>
           </motion.div>
+          <motion.button
+            onClick={() => setIsChatOpen(true)}
+            className={styles.aiButton}
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Sparkles size={18} />
+            <span>Chat with AI</span>
+          </motion.button>
           <Link href="#contact" className={styles.secondaryButton}>
             <motion.span
               style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}
@@ -66,6 +79,7 @@ export default function Hero() {
           </Link>
         </motion.div>
       </div>
+      <ResumeChat isOpen={isChatOpen} onClose={() => setIsChatOpen(false)} />
     </section>
   );
 }
