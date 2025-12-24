@@ -2,15 +2,15 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Download, MessageCircle } from "lucide-react";
+import { Download } from "lucide-react";
 import { useState } from "react";
 import styles from "./Header.module.css";
 import ResumeModal from "./ResumeModal";
-import ResumeChat from "./ResumeChat";
+
 
 export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isChatOpen, setIsChatOpen] = useState(false);
+
 
   return (
     <>
@@ -31,17 +31,7 @@ export default function Header() {
             <Link href="#contact" className={styles.link}>Contact</Link>
           </nav>
           <div className={styles.buttonGroup}>
-            <motion.button 
-              onClick={() => setIsChatOpen(true)}
-              className={styles.chatButton}
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.2 }}
-              title="Chat with Resume (AI)"
-            >
-              <MessageCircle size={16} />
-              <span className={styles.buttonText}>AI Chat</span>
-            </motion.button>
+
             <motion.button 
               onClick={() => setIsModalOpen(true)}
               className={styles.resumeButton}
@@ -59,10 +49,7 @@ export default function Header() {
         isOpen={isModalOpen} 
         onClose={() => setIsModalOpen(false)} 
       />
-      <ResumeChat 
-        isOpen={isChatOpen} 
-        onClose={() => setIsChatOpen(false)} 
-      />
+
     </>
   );
 }

@@ -65,7 +65,7 @@ export default function Hero() {
             transition={{ duration: 0.2 }}
           >
             <Sparkles size={18} />
-            <span>Chat with AI</span>
+            <span>Bazz Ai Assistant</span>
           </motion.button>
           <Link href="#contact" className={styles.secondaryButton}>
             <motion.span
