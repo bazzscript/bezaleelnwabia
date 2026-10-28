@@ -31,6 +31,11 @@ export default function Home() {
               {d.client} — {d.role} ({d.period})
             </h3>
             <p>{d.headline}</p>
+            {d.url && (
+              <p>
+                <a href={d.url}>Visit {d.client}</a>
+              </p>
+            )}
             <p>{d.problem}</p>
             <ul>
               {d.shipped.map((s) => (

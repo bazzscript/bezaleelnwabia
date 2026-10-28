@@ -51,7 +51,7 @@ export default function MenuBar() {
     {
       label: "Deployments",
       items: [
-        { label: "Secondo", action: go("deployments", "secondo") },
+        { label: "Seocondo", action: go("deployments", "seocondo") },
         { label: "MealCondo", action: go("deployments", "mealcondo") },
         { label: "PassOncology", action: go("deployments", "passoncology") },
         { label: "DevotionHub", action: go("deployments", "devotionhub") },

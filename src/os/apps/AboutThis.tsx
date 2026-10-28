@@ -9,7 +9,7 @@ export default function AboutThis() {
     ["Model", `Human, ${age()}-inch (Feb ${site.birth.year})`],
     ["Chip", "Coffee + jollof, Enugu-built"],
     ["Memory", "4+ years of production incidents"],
-    ["Startup Disk", "Secondo · MealCondo"],
+    ["Startup Disk", "Seocondo · MealCondo"],
     ["Display", "Plain English & architecture diagrams"],
     ["Serial", site.timezoneLabel],
     ["macOS", "BezOS 26 “Forward”"],

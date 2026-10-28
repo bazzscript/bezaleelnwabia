@@ -20,11 +20,12 @@ export type Deployment = {
 
 export const deployments: Deployment[] = [
   {
-    id: "secondo",
-    client: "Secondo",
+    id: "seocondo",
+    client: "Seocondo",
     role: "Co-founder · CTO · Lead Engineer",
     period: "Present",
     location: "Remote",
+    url: "https://seocondo.com/",
     color: "#7c5cff",
     headline: "Building a company from the first line of code.",
     problem:
@@ -40,7 +41,7 @@ export const deployments: Deployment[] = [
   {
     id: "mealcondo",
     client: "MealCondo",
-    role: "CTO · Intelligent Food Solutions",
+    role: "Co-founder · CTO · Intelligent Food Solutions",
     period: "Sep 2025 — Present",
     location: "Abuja, Nigeria",
     url: "https://www.mealcondo.com/home",
@@ -71,6 +72,7 @@ export const deployments: Deployment[] = [
     role: "Senior AI & Systems Engineer · Consultant",
     period: "2026",
     location: "London, UK (remote)",
+    url: "https://passoncology.com/",
     color: "#e5486b",
     headline: "Rebuilt a paying product's foundations without switching it off.",
     problem:
@@ -97,6 +99,7 @@ export const deployments: Deployment[] = [
     role: "Senior Backend Engineer · Mesiere",
     period: "Jul 2025 — Jun 2026",
     location: "London, UK (remote)",
+    url: "https://www.devotionhub.com/",
     color: "#2f9e8f",
     image: "/projects/devotionhub.png",
     headline: "Kept a growing content platform fast, safe and always on.",
@@ -123,6 +126,7 @@ export const deployments: Deployment[] = [
     role: "Backend Engineer",
     period: "Aug 2022 — Jul 2025",
     location: "Enugu, Nigeria",
+    url: "https://dado.ng/",
     color: "#1f8f4e",
     headline: "Built the money and delivery engine for a food delivery company.",
     problem:
@@ -169,6 +173,7 @@ export const deployments: Deployment[] = [
     role: "Backend Engineer",
     period: "Jan 2024 — Sep 2024",
     location: "Lagos, Nigeria",
+    url: "https://perime.co/",
     color: "#c2410c",
     headline: "Location and ticketing backends for a city events platform.",
     problem: "An events app needed map-based search, venue routing and a safe way to hold ticket money.",

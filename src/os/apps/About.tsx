@@ -30,7 +30,7 @@ export default function About() {
             infrastructure in two weeks without switching it off.
           </p>
           <p>
-            Right now I&apos;m co-founder and CTO at <strong>Secondo</strong>, CTO at <strong>MealCondo</strong>, and I
+            Right now I&apos;m co-founder and CTO at <strong>Seocondo</strong> and <strong>MealCondo</strong>, and I
             take on a small number of consulting deployments alongside.
           </p>
           <div className="note-stats">
@@ -110,10 +110,10 @@ export default function About() {
           <h1>Now</h1>
           <ul className="checklist">
             <li>
-              <b>Secondo</b> — co-founder, CTO and lead engineer. Building from zero.
+              <b>Seocondo</b> — co-founder, CTO and lead engineer. Building from zero.
             </li>
             <li>
-              <b>MealCondo</b> — CTO. AI kitchen assistant, recommendations and 4 mobile apps.
+              <b>MealCondo</b> — co-founder and CTO. AI kitchen assistant, recommendations and 4 mobile apps.
             </li>
             <li>
               <b>Consulting</b> — {site.availability.detail}.
