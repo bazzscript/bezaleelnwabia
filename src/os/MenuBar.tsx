@@ -70,6 +70,7 @@ export default function MenuBar() {
         "sep",
         { label: "My card", action: go("card") },
         { label: "Resume", action: go("resume") },
+        { label: "Pictures", action: go("pictures") },
       ],
     },
   ];

@@ -11,6 +11,7 @@ import Card from "./apps/Card";
 import Resume from "./apps/Resume";
 import Terminal from "./apps/Terminal";
 import Trash from "./apps/Trash";
+import Pictures from "./apps/Pictures";
 import AboutThis from "./apps/AboutThis";
 import type { AppId } from "./store";
 
@@ -34,8 +35,9 @@ export const apps: Record<AppId, AppDef> = {
   card: { id: "card", title: "My card", label: "My card", Component: Card, size: [640, 560] },
   resume: { id: "resume", title: "Resume.pdf", label: "Resume", Component: Resume, size: [820, 700] },
   terminal: { id: "terminal", title: "guest — zsh", label: "Terminal", Component: Terminal, size: [700, 440], dark: true },
+  pictures: { id: "pictures", title: "Pictures", label: "Pictures", Component: Pictures, size: [860, 580] },
   trash: { id: "trash", title: "Trash", label: "Trash", Component: Trash, size: [600, 420] },
   aboutThis: { id: "aboutThis", title: "", label: "About This Bezaleel", Component: AboutThis, size: [340, 470] },
 };
 
-export const dockApps: AppId[] = ["about", "deployments", "services", "process", "messages", "booking", "card", "resume", "terminal"];
+export const dockApps: AppId[] = ["about", "deployments", "services", "process", "messages", "booking", "card", "resume", "pictures", "terminal"];

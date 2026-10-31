@@ -110,7 +110,7 @@ export default function About() {
           <h1>Now</h1>
           <ul className="checklist">
             <li>
-              <b>Seocondo</b> — co-founder, CTO and lead engineer. Building from zero.
+              <b>Seocondo</b> — co-founder, CTO and lead engineer. An AI agent that writes, publishes and improves SEO blogs on autopilot.
             </li>
             <li>
               <b>MealCondo</b> — co-founder and CTO. AI kitchen assistant, recommendations and 4 mobile apps.

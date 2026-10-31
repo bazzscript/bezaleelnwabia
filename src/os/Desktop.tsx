@@ -15,6 +15,7 @@ const desktopFiles: { id: AppId; label: string; Icon: typeof Folder; color: stri
   { id: "resume", label: "Resume.pdf", Icon: FileText, color: "#e5484d" },
   { id: "card", label: "Card.vcf", Icon: IdCard, color: "#18181b" },
   { id: "deployments", label: "Deployments", Icon: Folder, color: "#2f6bff" },
+  { id: "pictures", label: "Pictures", Icon: Folder, color: "#2f6bff" },
   { id: "process", label: "how-i-work.md", Icon: NotebookText, color: "#8b5cf6" },
 ];
 

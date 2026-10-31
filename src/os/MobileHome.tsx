@@ -8,7 +8,7 @@ import { apps } from "./registry";
 import { fmtTime, useNow } from "./hooks";
 import { useOS, type AppId } from "./store";
 
-const grid: AppId[] = ["about", "deployments", "services", "process", "messages", "terminal", "resume", "trash"];
+const grid: AppId[] = ["about", "deployments", "services", "process", "messages", "terminal", "resume", "pictures", "trash"];
 const dock: AppId[] = ["booking", "card"];
 
 export default function MobileHome() {

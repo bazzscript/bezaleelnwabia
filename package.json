@@ -6,11 +6,14 @@
     "node": "22.x"
   },
   "scripts": {
+    "predev": "node scripts/gen-pictures.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/gen-pictures.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "extract-resume": "node scripts/extract-resume-text.js"
+    "extract-resume": "node scripts/extract-resume-text.js",
+    "pictures": "node scripts/gen-pictures.mjs"
   },
   "dependencies": {
     "@types/qrcode": "^1.5.6",

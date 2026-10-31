@@ -13,6 +13,7 @@ export type AppId =
   | "resume"
   | "terminal"
   | "trash"
+  | "pictures"
   | "aboutThis";
 
 export type WinState = {
