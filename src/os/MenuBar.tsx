@@ -53,6 +53,7 @@ export default function MenuBar() {
       items: [
         { label: "Seocondo", action: go("deployments", "seocondo") },
         { label: "MealCondo", action: go("deployments", "mealcondo") },
+        { label: "Hoster", action: go("deployments", "hoster") },
         { label: "PassOncology", action: go("deployments", "passoncology") },
         { label: "DevotionHub", action: go("deployments", "devotionhub") },
         { label: "Dadofood", action: go("deployments", "dadofood") },

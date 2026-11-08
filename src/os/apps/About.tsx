@@ -30,7 +30,8 @@ export default function About() {
             infrastructure in two weeks without switching it off.
           </p>
           <p>
-            Right now I&apos;m co-founder and CTO at <strong>Seocondo</strong> and <strong>MealCondo</strong>, and I
+            Right now I&apos;m co-founder and CTO at <strong>Seocondo</strong> and <strong>MealCondo</strong>, co-founder of{" "}
+            <strong>Hoster</strong>, and I
             take on a small number of consulting deployments alongside.
           </p>
           <div className="note-stats">
@@ -114,6 +115,9 @@ export default function About() {
             </li>
             <li>
               <b>MealCondo</b> — co-founder, CTO and product engineer. Apps, AI kitchen assistant and recipe import, live with active users.
+            </li>
+            <li>
+              <b>Hoster</b> — co-founder and product engineer. An AI front desk that answers and books short-let guests on WhatsApp, Instagram and calls.
             </li>
             <li>
               <b>Consulting</b> — {site.availability.detail}.
