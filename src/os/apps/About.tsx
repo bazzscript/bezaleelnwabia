@@ -110,10 +110,10 @@ export default function About() {
           <h1>Now</h1>
           <ul className="checklist">
             <li>
-              <b>Seocondo</b> — co-founder, CTO and lead engineer. An AI agent that writes, publishes and improves SEO blogs on autopilot.
+              <b>Seocondo</b> — co-founder, CTO and product engineer. Clara, an AI agent that grows brands across Google, AI search and app stores.
             </li>
             <li>
-              <b>MealCondo</b> — co-founder and CTO. AI kitchen assistant, recommendations and 4 mobile apps.
+              <b>MealCondo</b> — co-founder, CTO and product engineer. Apps, AI kitchen assistant and recipe import, live with active users.
             </li>
             <li>
               <b>Consulting</b> — {site.availability.detail}.
