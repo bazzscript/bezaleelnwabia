@@ -27,7 +27,7 @@ export type AppDef = {
 
 export const apps: Record<AppId, AppDef> = {
   about: { id: "about", title: "Notes", label: "About me", Component: About, size: [780, 540] },
-  deployments: { id: "deployments", title: "Deployments", label: "Deployments", Component: Deployments, size: [940, 620] },
+  deployments: { id: "deployments", title: "Deployments / Work History", label: "Deployments / Work History", Component: Deployments, size: [940, 620] },
   services: { id: "services", title: "Work with me", label: "Work with me", Component: Services, size: [960, 640] },
   process: { id: "process", title: "How I work", label: "How I work", Component: Process, size: [720, 600] },
   messages: { id: "messages", title: "Messages", label: "Kind words", Component: Messages, size: [780, 540] },

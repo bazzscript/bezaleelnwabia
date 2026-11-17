@@ -7,7 +7,7 @@ import { useOS } from "../store";
 
 export default function Deployments({ arg }: { arg?: string }) {
   const { open } = useOS();
-  const [active, setActive] = useState(arg ?? deployments[1].id);
+  const [active, setActive] = useState(arg ?? deployments[0].id);
   const [mode, setMode] = useState<"plain" | "eng">("plain");
   const [mobileList, setMobileList] = useState(!arg);
 
@@ -26,7 +26,7 @@ export default function Deployments({ arg }: { arg?: string }) {
   return (
     <div className={`finder ${mobileList ? "show-list" : "show-detail"}`}>
       <aside className="finder-side">
-        <div className="finder-label">Deployments</div>
+        <div className="finder-label">Deployments / Work History</div>
         {deployments.map((x) => (
           <button
             key={x.id}

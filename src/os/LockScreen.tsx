@@ -8,34 +8,18 @@ import { useNow } from "./hooks";
 
 type Note = { id: string; app: string; color: string; title: string; body: string; time?: string };
 
-// Mum's message depends on the visitor's time of day.
-const mumNote = (hour: number): Note => {
-  const body =
-    hour < 5
-      ? "Why is your light still on by this time? Go and sleep."
-      : hour < 12
-        ? "Good morning. Did you pray before opening that laptop?"
-        : hour < 17
-          ? "Have you eaten? Don't let laptop finish you o."
-          : hour < 21
-            ? "Are you coming home for dinner or are you still coding?"
-            : "Close the laptop. The bugs will still be there tomorrow.";
-  return { id: "mum", app: "Mum", color: "#a855f7", title: "Mum 💜", body };
-};
-
-// Pool of notifications. A few are picked at random on every visit.
+// Pool of notifications, each tied to real work on the site. A few are shown at random on every visit.
 const pool: Note[] = [
-  { id: "deploy", app: "Deploy", color: "#22c55e", title: "✅ Production deploy succeeded", body: "Zero downtime. Paying users didn't notice a thing." },
-  { id: "clara", app: "Seocondo", color: "#7c5cff", title: "Clara published a new post", body: "Researched, written, fact-checked and live. Nobody had to lift a finger." },
-  { id: "gsc", app: "Search Console", color: "#4285f4", title: "📈 Impressions up 38% this week", body: "Seocondo's feedback loop is doing its thing." },
-  { id: "meal", app: "MealCondo", color: "#ff7a1a", title: "New meal plan generated", body: "Built around your diet. The AI only used our own recipes." },
-  { id: "ci", app: "GitHub", color: "#6e7681", title: "All checks have passed", body: "main · 42 tests green. Merging with confidence." },
-  { id: "pager", app: "Uptime", color: "#14b8a6", title: "30 days, 0 incidents", body: "Nobody got paged at 3am this month." },
-  { id: "michael", app: "Support", color: "#e5486b", title: "Michael drafted 12 replies", body: "Waiting for a human to approve. The inbox is under control." },
-  { id: "client", app: "Messages", color: "#0ea5e9", title: "New message from a founder", body: "\"Can you build this for us? We need it yesterday.\"" },
-  { id: "coffee", app: "Reminders", color: "#f59e0b", title: "☕ Coffee", body: "You've been in flow for 3 hours. Hydrate." },
-  { id: "railway", app: "Railway", color: "#8b5cf6", title: "Cron jobs ran on schedule", body: "5 of 5 jobs succeeded overnight." },
-  { id: "pr", app: "GitHub", color: "#6e7681", title: "Code review requested", body: "\"This is clean. Ship it.\"" },
+  { id: "hoster-booking", app: "Hoster", color: "#0ea5a4", title: "Booking confirmed", body: "The AI agent quoted, held and invoiced a guest on WhatsApp. Payment matched automatically." },
+  { id: "hoster-call", app: "Hoster", color: "#0ea5a4", title: "Guest call handled", body: "Voice agent checked availability and quoted the rate on a live call. Summary sent to the owner." },
+  { id: "clara", app: "Seocondo", color: "#7c5cff", title: "Article published", body: "Clara researched, drafted and fact-checked it. Approved by the brand owner before going live." },
+  { id: "meal", app: "MealCondo", color: "#ff7a1a", title: "Weekly meal plan ready", body: "Built around dietary needs and allergies, using MealCondo's own recipe library." },
+  { id: "michael", app: "PassOncology", color: "#e5486b", title: "Support replies drafted", body: "Michael drafted replies to new emails. Waiting for human review before sending." },
+  { id: "deploy", app: "Railway", color: "#8b5cf6", title: "Production deploy succeeded", body: "Health checks passed. Released with no downtime." },
+  { id: "ci", app: "GitHub", color: "#6e7681", title: "All checks passed", body: "main · tests, lint and contract checks green." },
+  { id: "jobs", app: "Railway", color: "#8b5cf6", title: "Scheduled jobs completed", body: "Overnight sync, renewals and cost reports ran on schedule." },
+  { id: "evals", app: "Evals", color: "#22c55e", title: "Agent evaluation complete", body: "No regressions against the baseline prompt set." },
+  { id: "client", app: "Mail", color: "#0ea5e9", title: "New enquiry", body: "A founder would like to discuss an AI deployment." },
 ];
 
 const ago = ["2m ago", "9m ago", "24m ago", "1h ago", "3h ago"];
@@ -61,10 +45,9 @@ const calendarNote: Note = {
 const MAX_VISIBLE = 3;
 const ARRIVAL_MS = 6000;
 
-// Builds the visit's notification order: availability first, then a shuffled mix including Mum.
+// Builds the visit's notification order: availability first, then a shuffled mix.
 function buildQueue(): Note[] {
-  const mixed = shuffle([...pool, mumNote(new Date().getHours())]);
-  return [calendarNote, ...mixed];
+  return [calendarNote, ...shuffle(pool)];
 }
 
 export default function LockScreen({ onUnlock, mobile }: { onUnlock: () => void; mobile: boolean }) {

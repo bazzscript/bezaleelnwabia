@@ -20,6 +20,39 @@ export type Deployment = {
 
 export const deployments: Deployment[] = [
   {
+    id: "hoster",
+    client: "Hoster",
+    role: "Co-founder · AI Engineer",
+    period: "Nov 2026 — Present",
+    location: "Abuja & Lagos, Nigeria",
+    url: "https://www.usehoster.com/",
+    color: "#0ea5a4",
+    headline: "An AI front desk that answers and books short-let guests on chat and calls. I rebuilt it into three services and made it self-serve.",
+    problem:
+      "Short-let apartment owners lose bookings every night: WhatsApp messages and Instagram DMs go unanswered, calls are missed, and the guest books a faster competitor. Hoster started as one Next.js app running a single pilot business. Every new phone line was set up by hand, and nobody could see what each customer cost to serve.",
+    shipped: [
+      "Split the original app into a web app, a Go backend and a Python AI service while it stayed live, with the same pages, data and replies as before",
+      "AI guest agent on WhatsApp and Instagram that shows free dates, prices and photos, holds the apartment, sends the invoice and fixes guest details",
+      "AI phone and WhatsApp calls: shorter pauses, natural fillers, next-free-date suggestions and a call summary for the owner",
+      "Automatic payments with Paystack: payment links, part-payments in instalments, and money sent straight to the owner, with bank-alert matching kept as a backup",
+      "Self-serve AI calls: a business buys a Nigerian phone number inside Hoster, tops up call credit, and its own AI assistant answers within minutes",
+      "Monthly subscription plans on card, a credit wallet charged per call minute, and limits on calls at once and daily spend",
+      "Admin tools for the founders: what each business costs Hoster (calls, phone minutes, AI tokens), a platform overview and a read-only view of any business",
+    ],
+    outcome:
+      "The new stack runs in production with a pilot short-let business in Abuja. I built hoster_api, hoster_ai and hoster_web, along with the payments, voice and billing work, in about a week.",
+    tech: ["Go", "Python", "FastAPI", "Next.js", "Supabase", "River", "Redis", "Claude API", "Vapi", "Paystack", "Railway", "Vercel"],
+    engineering: [
+      "Strangler-style split of a Next.js monolith (119 API routes, 4 scheduled jobs) into Next.js on Vercel, a Go API and a private Python AI service on Railway, with no schema changes and instant rollback",
+      "Go API (pgx, River job queue on Postgres, robfig/cron): Supabase JWT auth with per-request RLS transactions, byte-for-byte JSON parity checked by a 525-case parity suite and an OpenAPI contract test",
+      "Python AI service (FastAPI, Pydantic, strict Pyright): Claude Sonnet/Haiku tool-calling agents for guests and managers that never touch the DB or Meta directly and run tools through Go's private internal API",
+      "Voice: Vapi custom-LLM endpoint streamed through Go into a Claude voice turn, Vapi assistants built per line from a spec in code, Groq Whisper transcription, KrosAI Nigerian numbers",
+      "Webhook ingestion for WhatsApp Cloud API, Instagram, Paystack and Postmark: signature checks, DKIM-verified MIME bank-alert parsing and debounced agent turns run as River jobs",
+      "Billing and metering: Paystack payments, subaccounts and Subscriptions, a prepaid call-credit wallet, per-business cost sync (Vapi, KrosAI, Claude tokens) and spend caps",
+      "Built to run on many servers: no in-memory state, Redis cache invalidation, Postgres advisory job locks, graceful drain; Docker images, Go tests and golangci-lint in CI, ruff and pytest on the AI service",
+    ],
+  },
+  {
     id: "seocondo",
     client: "Seocondo",
     role: "Co-founder · CTO · Product Engineer",
@@ -83,39 +116,6 @@ export const deployments: Deployment[] = [
       "Constraint-bounded meal-plan generation (diet, allergens, spice, region, medical) with stage-by-stage pool diagnostics",
       "Subscriptions via RevenueCat + Paystack; creator royalty pools and payout batches; guest plans with idempotent claim on sign-up",
       "Expo apps with OTA updates, PostHog analytics + session replay; push campaigns via Expo; SES email; S3 media; Next.js site with ISR and structured data",
-    ],
-  },
-  {
-    id: "hoster",
-    client: "Hoster",
-    role: "Co-founder · AI Engineer",
-    period: "Nov 2026 — Present",
-    location: "Abuja & Lagos, Nigeria",
-    url: "https://www.usehoster.com/",
-    color: "#0ea5a4",
-    headline: "An AI front desk that answers and books short-let guests on chat and calls. I rebuilt it into three services and made it self-serve.",
-    problem:
-      "Short-let apartment owners lose bookings every night: WhatsApp messages and Instagram DMs go unanswered, calls are missed, and the guest books a faster competitor. Hoster started as one Next.js app running a single pilot business. Every new phone line was set up by hand, and nobody could see what each customer cost to serve.",
-    shipped: [
-      "Split the original app into a web app, a Go backend and a Python AI service while it stayed live, with the same pages, data and replies as before",
-      "AI guest agent on WhatsApp and Instagram that shows free dates, prices and photos, holds the apartment, sends the invoice and fixes guest details",
-      "AI phone and WhatsApp calls: shorter pauses, natural fillers, next-free-date suggestions and a call summary for the owner",
-      "Automatic payments with Paystack: payment links, part-payments in instalments, and money sent straight to the owner, with bank-alert matching kept as a backup",
-      "Self-serve AI calls: a business buys a Nigerian phone number inside Hoster, tops up call credit, and its own AI assistant answers within minutes",
-      "Monthly subscription plans on card, a credit wallet charged per call minute, and limits on calls at once and daily spend",
-      "Admin tools for the founders: what each business costs Hoster (calls, phone minutes, AI tokens), a platform overview and a read-only view of any business",
-    ],
-    outcome:
-      "The new stack runs in production with a pilot short-let business in Abuja. I built hoster_api, hoster_ai and hoster_web, along with the payments, voice and billing work, in about a week.",
-    tech: ["Go", "Python", "FastAPI", "Next.js", "Supabase", "River", "Redis", "Claude API", "Vapi", "Paystack", "Railway", "Vercel"],
-    engineering: [
-      "Strangler-style split of a Next.js monolith (119 API routes, 4 scheduled jobs) into Next.js on Vercel, a Go API and a private Python AI service on Railway, with no schema changes and instant rollback",
-      "Go API (pgx, River job queue on Postgres, robfig/cron): Supabase JWT auth with per-request RLS transactions, byte-for-byte JSON parity checked by a 525-case parity suite and an OpenAPI contract test",
-      "Python AI service (FastAPI, Pydantic, strict Pyright): Claude Sonnet/Haiku tool-calling agents for guests and managers that never touch the DB or Meta directly and run tools through Go's private internal API",
-      "Voice: Vapi custom-LLM endpoint streamed through Go into a Claude voice turn, Vapi assistants built per line from a spec in code, Groq Whisper transcription, KrosAI Nigerian numbers",
-      "Webhook ingestion for WhatsApp Cloud API, Instagram, Paystack and Postmark: signature checks, DKIM-verified MIME bank-alert parsing and debounced agent turns run as River jobs",
-      "Billing and metering: Paystack payments, subaccounts and Subscriptions, a prepaid call-credit wallet, per-business cost sync (Vapi, KrosAI, Claude tokens) and spend caps",
-      "Built to run on many servers: no in-memory state, Redis cache invalidation, Postgres advisory job locks, graceful drain; Docker images, Go tests and golangci-lint in CI, ruff and pytest on the AI service",
     ],
   },
   {

@@ -24,7 +24,7 @@ export default function Home() {
             </li>
           ))}
         </ul>
-        <h2>Deployments</h2>
+        <h2>Deployments / Work History</h2>
         {deployments.map((d) => (
           <section key={d.id}>
             <h3>

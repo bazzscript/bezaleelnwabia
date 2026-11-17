@@ -49,16 +49,16 @@ export default function MenuBar() {
       ],
     },
     {
-      label: "Deployments",
+      label: "Deployments / Work History",
       items: [
+        { label: "Hoster", action: go("deployments", "hoster") },
         { label: "Seocondo", action: go("deployments", "seocondo") },
         { label: "MealCondo", action: go("deployments", "mealcondo") },
-        { label: "Hoster", action: go("deployments", "hoster") },
         { label: "PassOncology", action: go("deployments", "passoncology") },
         { label: "DevotionHub", action: go("deployments", "devotionhub") },
         { label: "Dadofood", action: go("deployments", "dadofood") },
         "sep",
-        { label: "All deployments…", action: go("deployments") },
+        { label: "All work history…", action: go("deployments") },
       ],
     },
     {
