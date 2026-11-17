@@ -36,7 +36,7 @@ export function age(now = new Date()) {
 }
 
 export const stats = [
-  { value: "5M+", label: "payment cycles a month on a wallet system I built" },
+  { value: "3", label: "AI products I co-founded and built, all running in production" },
   { value: "99.9%", label: "uptime on a serverless platform I scaled" },
   { value: "2 wks", label: "to move a live, paying product to a new database" },
   { value: "4", label: "mobile apps shipped as a startup CTO" },

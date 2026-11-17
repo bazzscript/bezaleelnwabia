@@ -26,9 +26,10 @@ export default function About() {
             people.
           </p>
           <p>
-            For the last four years I&apos;ve been the engineer founders call when something has to ship: I&apos;ve been a
-            startup CTO, built payment systems handling millions of transactions, and moved a live UK product to new
-            infrastructure in two weeks without switching it off.
+            For the last four years I&apos;ve been the engineer founders call when something has to ship. Recently I
+            built Clara, an AI agent that runs a brand&apos;s SEO on her own; AI agents that book short-let guests on
+            WhatsApp and answer their phone calls; and moved a live UK exam-prep product to new infrastructure in two
+            weeks without switching it off.
           </p>
           <p>
             Right now I&apos;m co-founder and CTO at <strong>Seocondo</strong> and <strong>MealCondo</strong>, co-founder of{" "}
