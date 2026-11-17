@@ -53,7 +53,7 @@ export default function Home() {
           ))}
         </ul>
         <a href={site.links.linkedin}>LinkedIn</a> <a href={site.links.github}>GitHub</a>{" "}
-        <a href="/resume/bezaleel-nwabia-fullstack.pdf">Resume (PDF)</a>
+        <a href="/resume/bezaleel-nwabia-ai-engineer.pdf">Resume (PDF)</a>
       </main>
     </>
   );
