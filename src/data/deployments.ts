@@ -55,7 +55,7 @@ export const deployments: Deployment[] = [
   {
     id: "seocondo",
     client: "Seocondo",
-    role: "Co-founder · CTO · Product Engineer",
+    role: "Co-founder · AI Engineer",
     period: "Sep 2026 — Present",
     location: "Remote",
     url: "https://seocondo.com/",

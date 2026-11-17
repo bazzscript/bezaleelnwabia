@@ -4,8 +4,8 @@ export const site = {
   name: "Bezaleel Nwabia",
   fullName: "Chukwuemeka Bezaleel Nwabia",
   firstName: "Bezaleel",
-  role: "Forward Deployed & AI Solutions Engineer",
-  tagline: "I embed with your team, find the real problem, and ship the software that fixes it.",
+  role: "AI Engineer · AI Solutions · Forward Deployed",
+  tagline: "I build AI agents, voice assistants and RAG systems that run in production, working with your team until they solve the real problem.",
   location: "Enugu, Nigeria",
   timezone: "Africa/Lagos",
   timezoneLabel: "WAT · GMT+1",
@@ -37,15 +37,15 @@ export function age(now = new Date()) {
 
 export const stats = [
   { value: "3", label: "AI products I co-founded and built, all running in production" },
-  { value: "99.9%", label: "uptime on a serverless platform I scaled" },
-  { value: "2 wks", label: "to move a live, paying product to a new database" },
-  { value: "4", label: "mobile apps shipped as a startup CTO" },
+  { value: "24/7", label: "AI chat and voice agents booking real guests on WhatsApp and phone calls" },
+  { value: "525", label: "behaviour tests proving a live product rebuilt into Go and Python works the same" },
+  { value: "2 wks", label: "to move a live, paying product to a new database without downtime" },
 ];
 
 export const stack = {
   "AI & data": ["AI agents & tool calling", "Voice agents", "Claude API", "OpenAI", "RAG pipelines", "LangChain", "Embeddings & ranking", "Vector search", "Evals"],
   Backend: ["TypeScript", "Python", "NestJS", "FastAPI", "Hono", "Node.js", "Go"],
   "Web & mobile": ["Next.js", "React", "React Native", "Expo"],
-  Data: ["PostgreSQL", "Redis", "MongoDB", "Supabase", "Firebase"],
-  Cloud: ["AWS (Lambda, S3, RDS)", "SST", "Docker", "Railway", "Azure", "GitHub Actions"],
+  Data: ["PostgreSQL", "pgvector", "Redis", "MongoDB", "Supabase"],
+  Cloud: ["AWS (Lambda, S3, RDS)", "SST", "Docker", "Railway", "Vercel", "GitHub Actions"],
 };

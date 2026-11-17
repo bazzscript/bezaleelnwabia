@@ -14,13 +14,13 @@ export default function About() {
       id: "hi",
       folder: "Pinned",
       title: `Hi, I'm ${site.firstName}.`,
-      preview: "Forward Deployed & AI Solutions Engineer",
+      preview: "AI Engineer · AI Solutions · Forward Deployed",
       date: "just now",
       body: (
         <>
           <h1>Hi, I&apos;m {site.firstName}. 👋</h1>
           <p className="lede">
-            I&apos;m a <strong>Forward Deployed and AI Solutions Engineer</strong>. I come into your business, learn how
+            I&apos;m an <strong>AI Engineer</strong> who works as a forward deployed and AI solutions engineer. I come into your business, learn how
             the work actually gets done, and build the software — usually AI agents, voice and chat assistants, and the
             systems behind them — that makes it faster, cheaper or possible at all. Then I stay until it works for real
             people.
@@ -103,23 +103,69 @@ export default function About() {
       ),
     },
     {
+      id: "ai",
+      folder: "Pinned",
+      title: "How I build AI systems",
+      preview: "Grounding, evals, cost and humans in the loop",
+      date: "Today",
+      body: (
+        <>
+          <h1>How I build AI systems</h1>
+          <p className="lede">
+            A demo that works once is easy. An agent that real customers rely on every day needs a few things done
+            properly.
+          </p>
+          <ul className="checklist">
+            <li>
+              <b>Agents that do real work.</b> The model calls tools that read and change real data: Hoster&apos;s agent
+              checks availability, holds an apartment and sends the invoice. Business rules stay in the backend, so the
+              model can&apos;t skip them.
+            </li>
+            <li>
+              <b>Grounded answers.</b> Retrieval over the customer&apos;s own data, with citations. PassOncology&apos;s
+              study assistant answers from oncology textbooks in pgvector; MealCondo&apos;s only uses its own recipes.
+            </li>
+            <li>
+              <b>Humans where it matters.</b> Discounts, part-payments, support replies and published articles wait for
+              a person to approve them.
+            </li>
+            <li>
+              <b>Measured, not guessed.</b> Evals for Clara&apos;s prompts, and behaviour tests that compare the old and
+              new system before anything is switched over.
+            </li>
+            <li>
+              <b>Cost and speed.</b> The right model for each task (Haiku, Sonnet, Opus), prompt caching, token and call
+              costs tracked per customer, spend caps, and voice turns tuned to feel natural on a live call.
+            </li>
+            <li>
+              <b>Built to stay up.</b> AI in its own service behind a private key, background jobs that survive
+              restarts, and nothing important kept in one server&apos;s memory.
+            </li>
+          </ul>
+          <button className="btn btn-primary" onClick={() => open("deployments")}>
+            See it in my work →
+          </button>
+        </>
+      ),
+    },
+    {
       id: "now",
       folder: "Notes",
       title: "Now",
       preview: "What I'm working on",
-      date: "Oct 2026",
+      date: "Nov 2026",
       body: (
         <>
           <h1>Now</h1>
           <ul className="checklist">
             <li>
-              <b>Seocondo</b> — co-founder, CTO and product engineer. Clara, an AI agent that grows brands across Google, AI search and app stores.
+              <b>Hoster</b> — co-founder and AI engineer. An AI front desk that answers and books short-let guests on WhatsApp, Instagram and calls. Rebuilt into Go, Python and Next.js services, with Paystack payments and self-serve AI phone lines.
+            </li>
+            <li>
+              <b>Seocondo</b> — co-founder and AI engineer. Clara, an AI agent that grows brands across Google, AI search and app stores.
             </li>
             <li>
               <b>MealCondo</b> — co-founder, CTO and product engineer. Apps, AI kitchen assistant and recipe import, live with active users.
-            </li>
-            <li>
-              <b>Hoster</b> — co-founder and AI engineer. An AI front desk that answers and books short-let guests on WhatsApp, Instagram and calls. Rebuilt into Go, Python and Next.js services, with Paystack payments and self-serve AI phone lines.
             </li>
             <li>
               <b>Available</b> — {site.availability.detail}.
