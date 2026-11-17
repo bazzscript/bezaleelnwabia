@@ -22,8 +22,8 @@ export const site = {
   calLink: "",
   availability: {
     open: true,
-    label: "Open to full-time roles & consulting",
-    detail: "Open to full-time AI engineering roles · 1 consulting slot open",
+    label: "Open to full-time AI roles",
+    detail: "AI, forward deployed and AI solutions engineering · 1 consulting slot open",
   },
   engagementModes: ["Full-time", "Consulting", "Part-time"],
 };
