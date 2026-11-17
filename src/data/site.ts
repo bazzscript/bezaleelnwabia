@@ -22,10 +22,10 @@ export const site = {
   calLink: "",
   availability: {
     open: true,
-    label: "Taking new deployments",
-    detail: "1 consulting slot open · open to full-time & part-time roles",
+    label: "Open to full-time roles & consulting",
+    detail: "Open to full-time AI engineering roles · 1 consulting slot open",
   },
-  engagementModes: ["Consulting", "Part-time", "Full-time"],
+  engagementModes: ["Full-time", "Consulting", "Part-time"],
 };
 
 export function age(now = new Date()) {

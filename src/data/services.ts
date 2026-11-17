@@ -28,9 +28,9 @@ export const services = [
   },
   {
     id: "embed",
-    name: "Full-time / Fractional CTO",
+    name: "Full-time Role / Fractional CTO",
     duration: "Ongoing",
-    who: "You need someone senior who owns the technology long-term.",
+    who: "You're hiring, or need someone senior who owns the technology long-term.",
     what: [
       "Open to full-time Forward Deployed, AI Solutions and AI Engineering roles",
       "Fractional CTO for early-stage startups",

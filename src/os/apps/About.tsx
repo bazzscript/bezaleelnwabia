@@ -32,8 +32,8 @@ export default function About() {
           </p>
           <p>
             Right now I&apos;m co-founder and CTO at <strong>Seocondo</strong> and <strong>MealCondo</strong>, co-founder of{" "}
-            <strong>Hoster</strong>, and I
-            take on a small number of consulting deployments alongside.
+            <strong>Hoster</strong>. I&apos;m <strong>open to full-time roles</strong> in AI engineering, forward
+            deployed and AI solutions engineering, and I take on a small number of consulting deployments alongside.
           </p>
           <div className="note-stats">
             {stats.map((s) => (
@@ -121,7 +121,7 @@ export default function About() {
               <b>Hoster</b> — co-founder and AI engineer. An AI front desk that answers and books short-let guests on WhatsApp, Instagram and calls. Rebuilt into Go, Python and Next.js services, with Paystack payments and self-serve AI phone lines.
             </li>
             <li>
-              <b>Consulting</b> — {site.availability.detail}.
+              <b>Available</b> — {site.availability.detail}.
             </li>
             <li>
               <b>Learning</b> — evals and guardrails for AI agents that touch real customer data.

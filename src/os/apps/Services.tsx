@@ -13,8 +13,8 @@ export default function Services() {
     <div className="pane-scroll services">
       <header className="pane-head">
         <span className="eyebrow">Work with me</span>
-        <h1>Three ways to deploy me.</h1>
-        <p>Consulting, part-time or full-time. Every engagement is scoped and priced after a 30-minute call.</p>
+        <h1>Three ways to work with me.</h1>
+        <p>A full-time role, consulting or part-time. Every engagement is scoped and priced after a 30-minute call.</p>
       </header>
 
       <div className="tiers">

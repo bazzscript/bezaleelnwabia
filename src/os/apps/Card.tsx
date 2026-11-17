@@ -83,8 +83,8 @@ async function drawCard(): Promise<Blob | null> {
   ctx.fillStyle = "rgba(255,255,255,0.75)";
   ctx.font = `500 26px ${font}`;
   ctx.textAlign = "right";
-  ctx.fillText("Available to deploy", pad + W - 64, y + 95);
-  const statusW = ctx.measureText("Available to deploy").width;
+  ctx.fillText("Open to work", pad + W - 64, y + 95);
+  const statusW = ctx.measureText("Open to work").width;
   ctx.textAlign = "left";
   ctx.fillStyle = "#4ade80";
   ctx.beginPath();
@@ -198,7 +198,7 @@ export default function Card() {
             <div className="bc-top">
               <span className="bc-mark">BN</span>
               <span className="bc-status">
-                <i /> Available to deploy
+                <i /> Open to work
               </span>
             </div>
             <div className="bc-mid">

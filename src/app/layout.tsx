@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bezaleelnwabia.vercel.app"),
   title: "Bezaleel Nwabia — Forward Deployed & AI Solutions Engineer",
   description:
-    "I embed with your team, find the real problem, and ship the software — usually with AI — that fixes it. Available for consulting, part-time and full-time roles.",
+    "I embed with your team, find the real problem, and ship the software — usually with AI — that fixes it. Open to full-time roles, consulting and part-time work.",
   openGraph: {
     title: "Bezaleel Nwabia — Forward Deployed & AI Solutions Engineer",
     description: "I embed with your team, find the real problem, and ship the software that fixes it.",
