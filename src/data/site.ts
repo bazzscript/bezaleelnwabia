@@ -4,7 +4,7 @@ export const site = {
   name: "Bezaleel Nwabia",
   fullName: "Chukwuemeka Bezaleel Nwabia",
   firstName: "Bezaleel",
-  role: "Forward Deployed Engineer",
+  role: "Forward Deployed & AI Solutions Engineer",
   tagline: "I embed with your team, find the real problem, and ship the software that fixes it.",
   location: "Enugu, Nigeria",
   timezone: "Africa/Lagos",
@@ -43,8 +43,8 @@ export const stats = [
 ];
 
 export const stack = {
-  "AI & data": ["RAG pipelines", "LangChain", "Embeddings & ranking", "OpenAI", "AI agents", "Vector search"],
-  Backend: ["TypeScript", "Python", "NestJS", "FastAPI", "Hono", "Node.js", "Go (familiar)"],
+  "AI & data": ["AI agents & tool calling", "Voice agents", "Claude API", "OpenAI", "RAG pipelines", "LangChain", "Embeddings & ranking", "Vector search", "Evals"],
+  Backend: ["TypeScript", "Python", "NestJS", "FastAPI", "Hono", "Node.js", "Go"],
   "Web & mobile": ["Next.js", "React", "React Native", "Expo"],
   Data: ["PostgreSQL", "Redis", "MongoDB", "Supabase", "Firebase"],
   Cloud: ["AWS (Lambda, S3, RDS)", "SST", "Docker", "Railway", "Azure", "GitHub Actions"],

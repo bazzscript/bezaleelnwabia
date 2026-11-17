@@ -32,7 +32,7 @@ export const services = [
     duration: "Ongoing",
     who: "You need someone senior who owns the technology long-term.",
     what: [
-      "Open to full-time Forward Deployed Engineer roles",
+      "Open to full-time Forward Deployed, AI Solutions and AI Engineering roles",
       "Fractional CTO for early-stage startups",
       "Architecture, hiring help and technical strategy",
       "Remote-first, GMT+1 — overlaps with Europe & US mornings",
@@ -78,6 +78,10 @@ export const faqs = [
   {
     q: "What is a Forward Deployed Engineer?",
     a: "An engineer who works directly with you instead of behind a ticket queue. I learn your business, build the software, and stay until it's working for real people. Palantir made the role famous; AI companies like OpenAI and Anthropic now hire them to get AI working inside real businesses.",
+  },
+  {
+    q: "And an AI Solutions Engineer?",
+    a: "Someone who takes a business problem and designs and ships the AI system that solves it: choosing the models, building the agents, tools and data pipelines, measuring quality and cost, and getting it into production. It's the same work I do as an FDE, with the focus on the AI part. At Hoster, for example, I built the Claude agents that book guests on WhatsApp and answer their phone calls.",
   },
   {
     q: "I'm not technical. Will I understand what you're doing?",

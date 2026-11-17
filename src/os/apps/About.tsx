@@ -14,15 +14,16 @@ export default function About() {
       id: "hi",
       folder: "Pinned",
       title: `Hi, I'm ${site.firstName}.`,
-      preview: "Forward Deployed Engineer",
+      preview: "Forward Deployed & AI Solutions Engineer",
       date: "just now",
       body: (
         <>
           <h1>Hi, I&apos;m {site.firstName}. 👋</h1>
           <p className="lede">
-            I&apos;m a <strong>Forward Deployed Engineer</strong>. I come into your business, learn how the work actually
-            gets done, and build the software — usually with AI — that makes it faster, cheaper or possible at all.
-            Then I stay until it works for real people.
+            I&apos;m a <strong>Forward Deployed and AI Solutions Engineer</strong>. I come into your business, learn how
+            the work actually gets done, and build the software — usually AI agents, voice and chat assistants, and the
+            systems behind them — that makes it faster, cheaper or possible at all. Then I stay until it works for real
+            people.
           </p>
           <p>
             For the last four years I&apos;ve been the engineer founders call when something has to ship: I&apos;ve been a
@@ -117,7 +118,7 @@ export default function About() {
               <b>MealCondo</b> — co-founder, CTO and product engineer. Apps, AI kitchen assistant and recipe import, live with active users.
             </li>
             <li>
-              <b>Hoster</b> — co-founder and product engineer. An AI front desk that answers and books short-let guests on WhatsApp, Instagram and calls.
+              <b>Hoster</b> — co-founder and AI engineer. An AI front desk that answers and books short-let guests on WhatsApp, Instagram and calls. Rebuilt into Go, Python and Next.js services, with Paystack payments and self-serve AI phone lines.
             </li>
             <li>
               <b>Consulting</b> — {site.availability.detail}.

@@ -1,6 +1,6 @@
 # bezaleelnwabia.vercel.app
 
-Personal site for Bezaleel Nwabia, Forward Deployed Engineer. It looks like a macOS desktop (and an iOS home screen on phones).
+Personal site for Bezaleel Nwabia, Forward Deployed & AI Solutions Engineer. It looks like a macOS desktop (and an iOS home screen on phones).
 
 ## Edit content
 Everything personal is in `src/data/`:

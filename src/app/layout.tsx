@@ -9,17 +9,17 @@ const mono = Geist_Mono({ variable: "--font-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bezaleelnwabia.vercel.app"),
-  title: "Bezaleel Nwabia — Forward Deployed Engineer",
+  title: "Bezaleel Nwabia — Forward Deployed & AI Solutions Engineer",
   description:
     "I embed with your team, find the real problem, and ship the software — usually with AI — that fixes it. Available for consulting, part-time and full-time roles.",
   openGraph: {
-    title: "Bezaleel Nwabia — Forward Deployed Engineer",
+    title: "Bezaleel Nwabia — Forward Deployed & AI Solutions Engineer",
     description: "I embed with your team, find the real problem, and ship the software that fixes it.",
     url: "https://bezaleelnwabia.vercel.app",
     siteName: "Bezaleel Nwabia",
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: "Bezaleel Nwabia — Forward Deployed Engineer" },
+  twitter: { card: "summary_large_image", title: "Bezaleel Nwabia — Forward Deployed & AI Solutions Engineer" },
 };
 
 export const viewport: Viewport = {
