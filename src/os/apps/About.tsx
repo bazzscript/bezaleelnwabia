@@ -162,7 +162,7 @@ export default function About() {
               <b>Hoster</b> — co-founder and AI engineer. An AI front desk that answers and books short-let guests on WhatsApp, Instagram and calls. Rebuilt into Go, Python and Next.js services, with Paystack payments and self-serve AI phone lines.
             </li>
             <li>
-              <b>Seocondo</b> — co-founder and AI engineer. Clara, an AI agent that grows brands across Google, AI search and app stores.
+              <b>Seocondo</b> — co-founder, CTO and AI engineer. Clara, an AI agent that grows brands across Google, AI search and app stores.
             </li>
             <li>
               <b>MealCondo</b> — co-founder, CTO and product engineer. Apps, AI kitchen assistant and recipe import, live with active users.

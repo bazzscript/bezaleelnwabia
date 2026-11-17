@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "AI Engineer, AI Solutions Engineer and Forward Deployed Engineer. I build AI agents, voice assistants and RAG systems that run in production. Open to full-time roles and consulting.",
   openGraph: {
     title: "Bezaleel Nwabia — AI Engineer | AI Solutions Engineer | Forward Deployed Engineer",
-    description: "I build AI agents, voice assistants and RAG systems that run in production.",
+    description: "I embed with your team, find the real problem, and ship the AI that fixes it.",
     url: "https://bezaleelnwabia.vercel.app",
     siteName: "Bezaleel Nwabia",
     type: "website",

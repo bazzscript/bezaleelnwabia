@@ -5,7 +5,7 @@ export const site = {
   fullName: "Chukwuemeka Bezaleel Nwabia",
   firstName: "Bezaleel",
   role: "AI Engineer · AI Solutions · Forward Deployed",
-  tagline: "I build AI agents, voice assistants and RAG systems that run in production, working with your team until they solve the real problem.",
+  tagline: "I embed with your team, find the real problem, and ship the AI that fixes it.",
   location: "Enugu, Nigeria",
   timezone: "Africa/Lagos",
   timezoneLabel: "WAT · GMT+1",
